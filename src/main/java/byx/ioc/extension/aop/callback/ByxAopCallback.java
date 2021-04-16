@@ -1,19 +1,19 @@
-package byx.ioc.extension.aop.wrapper;
+package byx.ioc.extension.aop.callback;
 
 import byx.aop.ByxAOP;
 import byx.ioc.core.Container;
-import byx.ioc.core.ObjectPostWrapper;
-import byx.ioc.core.WrapperContext;
+import byx.ioc.core.ObjectCallback;
+import byx.ioc.core.ObjectCallbackContext;
 import byx.ioc.extension.aop.annotation.AdviceBy;
 
 /**
- * 创建AOP代理的包装器
+ * ByxAOP扩展
  *
  * @author byx
  */
-public class ByxAopPostWrapper implements ObjectPostWrapper {
+public class ByxAopCallback implements ObjectCallback {
     @Override
-    public Object doWrap(WrapperContext ctx) {
+    public Object afterObjectWrap(ObjectCallbackContext ctx) {
         Object obj = ctx.getObject();
         Container container = ctx.getContainer();
 
