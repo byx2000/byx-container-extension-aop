@@ -15,7 +15,7 @@
 
 <dependencies>
     <dependency>
-        <groupId>byx.ioc</groupId>
+        <groupId>byx.ioc.extension</groupId>
         <artifactId>byx-container-extension-aop</artifactId>
         <version>1.0.0</version>
     </dependency>
